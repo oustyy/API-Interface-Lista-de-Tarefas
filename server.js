@@ -6,10 +6,10 @@ app.use(express.json());
 app.use(express.static('public'));
 
 let tarefas = [
-  { id: 1, descricao: "Estudar Express.js", concluida: false },
+  { id: 1, descricao: "Estudar python", concluida: false },
   { id: 2, descricao: "Enviar trabalho de POO", concluida: true },
-  { id: 3, descricao: "Fazer task do projeto do DevFLOW", concluida: false },
-  { id: 4, descricao: "Estudar para Sistemas Operacionais", concluida: true }
+  { id: 3, descricao: "Fazer task do projeto do MVP", concluida: false },
+  { id: 4, descricao: "Estudar AWS", concluida: false }
 ];
 
 // GET /tarefas
