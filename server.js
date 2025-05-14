@@ -29,7 +29,7 @@ app.get('/tarefas/:id', (req, res) => {
   res.json(tarefa);
 });
 
-// PUT /tarefas/:id (marcar como concluída)
+// PUT /tarefas/:id (mark as completed)
 app.put('/tarefas/:id', (req, res) => {
   const id = parseInt(req.params.id);
   const tarefa = tarefas.find(t => t.id === id);
@@ -42,7 +42,7 @@ app.put('/tarefas/:id', (req, res) => {
   res.status(200).json(tarefa);
 });
 
-// POST /tarefas (adicionar nova tarefa)
+// POST /tarefas (add new task)
 app.post('/tarefas', (req, res) => {
   const novaDescricao = req.body.descricao;
   if (!novaDescricao) {
